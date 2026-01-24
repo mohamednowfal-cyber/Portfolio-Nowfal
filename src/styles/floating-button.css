@@ -95,3 +95,59 @@
 .floating-btn.third>span {
 	background-color: var(--primaryHi);
 }
+
+@media screen and (max-width: 768px) {
+	.floating-btn {
+		height: 45px;
+		width: 140px;
+	}
+
+	.floating-btn div {
+		height: 45px;
+		width: 140px;
+		font-size: 0.9rem;
+	}
+
+	.floating-btn.first {
+		top: 8%;
+		left: 5%;
+	}
+
+	.floating-btn.sec {
+		top: 8%;
+		right: 5%;
+	}
+
+	.floating-btn.third {
+		bottom: 12%;
+		right: 5%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.floating-btn {
+		height: 40px;
+		width: 120px;
+	}
+
+	.floating-btn div {
+		height: 40px;
+		width: 120px;
+		font-size: 0.85rem;
+	}
+
+	.floating-btn.first {
+		top: 5%;
+		left: 3%;
+	}
+
+	.floating-btn.sec {
+		top: 5%;
+		right: 3%;
+	}
+
+	.floating-btn.third {
+		bottom: 10%;
+		right: 3%;
+	}
+}

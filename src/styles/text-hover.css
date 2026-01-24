@@ -1,39 +1,99 @@
+/* Base hover text container */
 .hover-text {
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 
-.hover-text span {
+/* Ensure word groups don't animate, just hold layout */
+/* Ensure word groups capture the overflow of their rolling children */
+.hover-text .word-group {
 	display: inline-block;
-	transition: transform 0.2s;
-	position: relative;
-	transition-delay: var(--delay);
+	overflow: hidden;
+	vertical-align: bottom;
+	/* Ensure tighter fit for clipping */
 }
 
-/* Make space characters visible */
-.hover-text.name span {
+/* Character Spans - The Moving Parts */
+.hover-text .word-group>span {
+	display: inline-block;
+	position: relative;
+	transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+	transition-delay: var(--delay);
+	/* Ensure properties don't bleed */
+	transform-style: preserve-3d;
+}
+
+/* Make space characters visible/functional */
+.hover-text.name .space-char {
 	min-width: 0.3em;
 }
 
-.hover-text span:empty::before {
-	content: '\00a0';
-}
-
-.hover-text span::after {
+/* The Duplicate Text (Rolling In) */
+.hover-text .word-group>span::after {
 	content: attr(data-char);
 	position: absolute;
 	left: 0;
-	bottom: -100%;
-	transform: translateY(100%);
-	transition: transform 0.3s;
-	transition-delay: var(--delay);
+	top: 100%;
+	/* Placed directly below */
+	width: 100%;
+	height: 100%;
+	/* No separate transition - it follows the parent */
 }
 
-.hover-text:hover span {
+/* Hover State - Move the whole character unit up */
+.hover-text:hover .word-group>span {
 	transform: translateY(-100%);
 }
 
-.hover-text:hover span::after {
-	transform: translateY(0);
+/* Tablet, Small, and Mid Desktop: Force name to display on two lines */
+/* Tablet, Small, and Mid Desktop: Force name to display on two lines */
+@media screen and (max-width: 1399px) {
+	.hover-text.name {
+		/* Use standard flow layout instead of flexbox to prevent overlay/clipping issues */
+		display: inline-block;
+		text-align: center;
+		white-space: normal;
+	}
+
+	/* Keep word groups as inline blocks */
+	.hover-text.name .word-group {
+		display: inline-block;
+		white-space: nowrap;
+		vertical-align: top;
+	}
+
+	/* Space character becomes a block-level break */
+	.hover-text.name .space-char {
+		display: block;
+		width: 100%;
+		height: 0;
+		content: "";
+		margin: 0;
+	}
+}
+
+/* Extra padding for small mobile */
+@media screen and (max-width: 600px) {
+	.hover-text.name {
+		padding: 0 1rem;
+	}
+}
+
+/* Large Desktop: Single-line name (override) */
+@media screen and (min-width: 1400px) {
+	.hover-text.name {
+		display: inline-block;
+	}
+
+	.hover-text.name span:empty {
+		width: auto;
+		height: auto;
+		display: inline-block;
+	}
+
+	.hover-text.name span {
+		flex-shrink: initial;
+	}
 }

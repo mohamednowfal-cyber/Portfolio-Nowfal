@@ -34,6 +34,7 @@
 	bottom: 20px;
 	gap: 10px;
 }
+
 .github-ribbon {
 	position: absolute;
 	top: 0;
@@ -79,13 +80,13 @@
 	transition: all 0.25s ease;
 }
 
-.github-ribbon:hover > span {
+.github-ribbon:hover>span {
 	bottom: -40%;
 	filter: blur(18px);
 	scale: 1.2;
 }
 
-.github-ribbon:hover > div {
+.github-ribbon:hover>div {
 	transform: translateY(4px);
 }
 
@@ -100,12 +101,35 @@
 	.hero-section {
 		font-size: 2rem;
 	}
+
 	.hero-section .name {
 		font-size: 4rem;
 	}
 
 	.bottom-bar {
 		gap: 5px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.hero-section {
+		font-size: 1.5rem;
+		padding: 0 1.5rem;
+	}
+
+	.hero-section .name {
+		font-size: 3.5rem;
+	}
+
+	.hero-section p {
+		text-align: center;
+		padding: 0 1rem;
+	}
+
+	.bottom-bar {
+		gap: 4px;
+		bottom: 15px;
+		padding: 0 0.5rem;
 	}
 }
 
