@@ -1,13 +1,18 @@
-import { BiLogoTypescript } from 'react-icons/bi';
-import { DiMongodb, DiMsqlServer } from 'react-icons/di';
-import { FaBootstrap, FaNodeJs, FaReact } from 'react-icons/fa';
+import { BiLogoPostgresql } from 'react-icons/bi';
+import { FaCss3Alt, FaGithub, FaHtml5, FaNodeJs, FaReact } from 'react-icons/fa';
 import {
-	SiExpress,
-	SiFastify,
+	SiFigma,
+	SiFirebase,
+	SiFlutter,
+	SiFramer,
+	SiGit,
+	SiMongodb,
 	SiMui,
 	SiMysql,
+	SiRadixui,
 	SiShadcnui,
 	SiTailwindcss,
+	SiVite,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -34,19 +39,19 @@ const techs = [
 				color: 'rgb(104, 160, 99)',
 			},
 			{
-				title: 'TypeScript',
-				icon: <BiLogoTypescript color='rgb(0, 122, 204)' />,
-				color: 'rgba(0, 122, 204, 0.6)',
+				title: 'HTML5',
+				icon: <FaHtml5 color='rgb(227, 76, 38)' />,
+				color: 'rgba(227, 76, 38, 0.6)',
 			},
 			{
-				title: 'Fastify',
-				icon: <SiFastify color='rgba(255, 255, 255)' />,
-				color: 'rgba(255, 255, 255, 0.4)',
+				title: 'CSS3',
+				icon: <FaCss3Alt color='rgb(38, 77, 228)' />,
+				color: 'rgba(38, 77, 228, 0.6)',
 			},
 			{
-				title: 'Express JS',
-				icon: <SiExpress color='rgba(255, 255, 255)' />,
-				color: 'rgba(255, 255, 255, 0.4)',
+				title: 'Vite',
+				icon: <SiVite color='rgb(100, 108, 255)' />,
+				color: 'rgba(100, 108, 255, 0.6)',
 			},
 		],
 	},
@@ -69,30 +74,74 @@ const techs = [
 				color: 'rgb(6, 182, 212, 0.7)',
 			},
 			{
-				title: 'Bootstrap',
-				icon: <FaBootstrap color='rgb(125, 17, 248)' />,
-				color: 'rgb(125, 17, 248, 0.75)',
+				title: 'Spline',
+				icon: <img src='/spline-logo.jpg' alt='Spline' style={{ width: '50%', height: '50%', objectFit: 'contain', borderRadius: '50%' }} />,
+				color: 'rgb(255, 95, 109, 0.6)',
 			},
-			// Optionally add ShadCn here
+			{
+				title: 'Framer Motion',
+				icon: <SiFramer color='rgb(0, 153, 255)' />,
+				color: 'rgba(0, 153, 255, 0.6)',
+			},
+			{
+				title: 'Radix UI',
+				icon: <SiRadixui color='rgb(255, 255, 255)' />,
+				color: 'rgba(255, 255, 255, 0.6)',
+			},
+		],
+	},
+	{
+		heading: 'Tools & Platforms I Use',
+		items: [
+			{
+				title: 'Git',
+				icon: <SiGit color='rgb(240, 80, 50)' />,
+				color: 'rgba(240, 80, 50, 0.6)',
+			},
+			{
+				title: 'Flutter',
+				icon: <SiFlutter color='rgb(66, 165, 245)' />,
+				color: 'rgba(66, 165, 245, 0.6)',
+			},
+			{
+				title: 'Android Studio',
+				icon: <img src='/android-studio-logo.png' alt='Android Studio' style={{ width: '50%', height: '50%', objectFit: 'contain' }} />,
+				color: 'rgb(61, 219, 132, 0.6)',
+			},
+			{
+				title: 'Figma',
+				icon: <SiFigma color='rgb(162, 89, 255)' />,
+				color: 'rgba(162, 89, 255, 0.6)',
+			},
+			{
+				title: 'GitHub',
+				icon: <FaGithub color='rgb(255, 255, 255)' />,
+				color: 'rgba(255, 255, 255, 0.6)',
+			},
 		],
 	},
 	{
 		heading: 'Databases I Use',
 		items: [
 			{
-				title: 'MsSQL',
-				icon: <DiMsqlServer color='rgb(230, 50, 42)' />,
-				color: 'rgb(241, 83, 75, 0.5)',
+				title: 'MySQL',
+				icon: <SiMysql color='rgb(0, 117, 143)' />,
+				color: 'rgba(0, 117, 143, 0.6)',
 			},
 			{
 				title: 'MongoDB',
-				icon: <DiMongodb color='rgb(0, 237, 100)' />,
-				color: 'rgb(0, 237, 100, 0.7)',
+				icon: <SiMongodb color='rgb(71, 162, 72)' />,
+				color: 'rgba(71, 162, 72, 0.6)',
 			},
 			{
-				title: 'MySQL',
-				icon: <SiMysql color='rgb(0, 122, 158)' />,
-				color: 'rgb(0, 122, 158, 0.75)',
+				title: 'Firebase',
+				icon: <SiFirebase color='rgb(255, 202, 40)' />,
+				color: 'rgba(255, 202, 40, 0.6)',
+			},
+			{
+				title: 'PostgreSQL',
+				icon: <BiLogoPostgresql color='rgb(51, 103, 145)' />,
+				color: 'rgba(51, 103, 145, 0.6)',
 			},
 		],
 	},

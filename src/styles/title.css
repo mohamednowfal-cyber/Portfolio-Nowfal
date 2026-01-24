@@ -19,6 +19,7 @@
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	font-family: 'Fugaz One', sans-serif;
+	line-height: 24px;
 }
 
 .title .secondary-text {
@@ -30,6 +31,7 @@
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: hsl(196, 100%, 56%);
+	line-height: 24px;
 }
 
 @media screen and (max-width: 700px) {
@@ -37,6 +39,7 @@
 		--text-primary: 5rem;
 		--text-secondary: 6rem;
 	}
+
 	.title {
 		position: relative;
 		top: 0rem;

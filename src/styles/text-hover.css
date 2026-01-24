@@ -11,6 +11,15 @@
 	transition-delay: var(--delay);
 }
 
+/* Make space characters visible */
+.hover-text.name span {
+	min-width: 0.3em;
+}
+
+.hover-text span:empty::before {
+	content: '\00a0';
+}
+
 .hover-text span::after {
 	content: attr(data-char);
 	position: absolute;
