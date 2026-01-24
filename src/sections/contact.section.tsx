@@ -79,7 +79,7 @@ export const Contact = () => {
                         </div>
                     </a>
                     <a
-                        href='https://www.linkedin.com/in/mohamed-nowfal'
+                        href='https://www.linkedin.com/in/mohamed-nowfal-m-0941b1378/'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='contact-card contact-card-linkedin'
@@ -88,7 +88,7 @@ export const Contact = () => {
                         <FaLinkedinIn className='contact-icon' />
                         <div className='contact-card-content'>
                             <p className='contact-label'>LinkedIn</p>
-                            <p className='contact-value'>linkedin.com/in/mohamed-nowfal</p>
+                            <p className='contact-value'>linkedin.com/in/mohamed-nowfal-m-0941b1378</p>
                         </div>
                     </a>
                     <a
