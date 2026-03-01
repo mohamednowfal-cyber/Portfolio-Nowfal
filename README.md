@@ -1,35 +1,39 @@
-# Portfolio
+This project showcases my skills, projects, and experience in modern web development.
 
-## Building Blocks
+🌟 About The Project
 
-- [`React`](https://react.dev) (with [`Vite`](https://vitejs.dev))
-- [`Typescript`](https://www.typescriptlang.org/)
-- Package Manager: [`pnpm`](https://pnpm.io)
+This portfolio is built to highlight:
 
----
+💻 My technical skills
 
-## Scripts
+📂 Featured projects
 
-#### Start the development server:
+📜 Certifications & achievements
 
-```bash
-pnpm dev
-```
+📞 Contact information
 
-#### Start the production server:
+Designed with a clean UI and responsive layout for all devices.
 
-```bash
-pnpm start
-```
+🛠️ Tech Stack:
 
-#### Build For Production:
+HTML
 
-```bash
-pnpm build
-```
+CSS
 
-#### Preview Production Build:
+React
 
-```bash
-pnpm preview
-```
+Vite
+
+TypeScript
+
+🔗 Live Demo:
+
+👉 View Portfolio:https://nowfiii-portfolio.vercel.app
+
+📬 Contact Me:
+
+Email:muhmednowfal@gmail.com
+
+LinkedIn:https://www.linkedin.com/in/mohamed-nowfal-m-0941b1378
+
+GitHub:https://github.com/mohamednowfal-cyber
