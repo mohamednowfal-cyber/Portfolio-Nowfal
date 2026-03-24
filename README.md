@@ -20,11 +20,11 @@ HTML
 
 CSS
 
+TypeScript
+
 React
 
 Vite
-
-TypeScript
 
 🔗 Live Demo:
 
