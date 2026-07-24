@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
+import { SiLeetcode } from 'react-icons/si';
 
 import { FloatingButton } from '../components/floating-button';
 import { GlowLink } from '../components/glow-box-link';
@@ -12,6 +13,13 @@ export const InfoSection = () => {
 				label='About Me'
 				className='first'
 				href='/#about-me'
+			/>
+			<FloatingButton
+				label='Resume'
+				className='fourth'
+				href='/Nowfal Resume New.pdf'
+				target='_blank'
+				rel='noopener noreferrer'
 			/>
 			<p>Hi, I am</p>
 			<TextHover
@@ -44,6 +52,14 @@ export const InfoSection = () => {
 					icon={<IoMailOutline color='rgb(255, 165, 0)' />}
 					color='rgba(255, 165, 0, 0.6)'
 					aria-label='mail'
+				/>
+				<GlowLink
+					href='https://leetcode.com/u/MohamedNowfal18/'
+					icon={<SiLeetcode color='rgb(255, 193, 7)' />}
+					color='rgba(255, 193, 7, 0.6)'
+					aria-label='leetcode'
+					target='_blank'
+					rel='noopener noreferrer'
 				/>
 			</div>
 			<FloatingButton

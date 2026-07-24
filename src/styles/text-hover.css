@@ -16,7 +16,7 @@
 }
 
 /* Character Spans - The Moving Parts */
-.hover-text .word-group>span {
+.hover-text .word-group > span {
 	display: inline-block;
 	position: relative;
 	transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
@@ -31,7 +31,7 @@
 }
 
 /* The Duplicate Text (Rolling In) */
-.hover-text .word-group>span::after {
+.hover-text .word-group > span::after {
 	content: attr(data-char);
 	position: absolute;
 	left: 0;
@@ -43,7 +43,7 @@
 }
 
 /* Hover State - Move the whole character unit up */
-.hover-text:hover .word-group>span {
+.hover-text:hover .word-group > span {
 	transform: translateY(-100%);
 }
 
@@ -69,7 +69,7 @@
 		display: block;
 		width: 100%;
 		height: 0;
-		content: "";
+		content: '';
 		margin: 0;
 	}
 }
